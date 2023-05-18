@@ -48,6 +48,8 @@ let kelvin = 300;
 let celsius = kelvinToCelsius(kelvin);
 let fahrenheit = kelvinToFahrenheit(kelvin);
 let newton = kelvinToNewton(kelvin);
+fahrenheit = Math.floor(fahrenheit);
+kelvin =Math.floor(kelvin);
 
 console.log("Kelvin temperature:", kelvin);
 console.log("Celsius temperature:", celsius);
