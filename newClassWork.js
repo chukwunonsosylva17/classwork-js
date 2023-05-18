@@ -33,24 +33,21 @@ console.log(result)
 
 // The Kelvin Temperature that converts to Celsius, Fahrenheit and Newton temperature scales//
 function kelvinToCelsius(kelvin) {
-    return kelvin - 273.15;
+    return Math.round(kelvin - 273.15);
 }
 
 function kelvinToFahrenheit(kelvin) {
-    return (kelvin - 273.15) * 9/5 + 32;
+    return Math.round((kelvin - 273.15) * 9/5 + 32);
 }
 
 function kelvinToNewton(kelvin) {
-    return (kelvin - 273.15) * 0.33;
+    return Math.round((kelvin - 273.15) * 0.33);
 }
 
 let kelvin = 300;
 let celsius = kelvinToCelsius(kelvin);
 let fahrenheit = kelvinToFahrenheit(kelvin);
 let newton = kelvinToNewton(kelvin);
-fahrenheit = Math.floor(fahrenheit);
-kelvin =Math.floor(kelvin);
-
 console.log("Kelvin temperature:", kelvin);
 console.log("Celsius temperature:", celsius);
 console.log("Fahrenheit temperature:", fahrenheit);
